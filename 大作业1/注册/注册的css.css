@@ -1,0 +1,77 @@
+html{  
+  cursor:none;
+}
+#follower{
+  background-image: url("lunarsama.jpg");
+  background-size: auto;
+  position: fixed;
+  width: 30Px;
+  height: 32px;
+  z-index: 1;
+}
+#imageContainer{
+  width: 300px;
+  height:300px;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+}
+#imagecontainer img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(213, 77, 132);
+    background-image: url('bj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* 让背景固定 */
+  }
+  
+  
+  .form-group {
+    margin-bottom: 10px;
+    
+  }
+  .form-group label {
+    display: inline-block; /* 标签和输入在同一行显示 */
+    width: 150px; /* 根据需要调整宽度 */
+    text-align: right; /* 将标签右对齐 */
+    margin-right: 10px; /* 在标签和输入之间添加一些间距 */
+  }
+  .form-group input[type="radio"] {
+  display: inline-block;
+  margin-right: 5px; /* 调整按钮与文字之间的间距 */
+  padding: 5px; /* 添加一些填充以提高视觉吸引力 */
+  border: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+span {
+  display: inline-block;
+}
+  .form-group input {
+    width: 300px; /* 根据需要调整宽度 */
+    padding: 5px; /* 添加一些填充以提高视觉吸引力 */
+    box-sizing: border-box; /* 包括宽度中的填充和边框 */
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  button:hover {
+    background-color: #902662;
+  }

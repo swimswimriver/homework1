@@ -1,0 +1,61 @@
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;/*合并边框*/
+    border: 1px solid #ccc;
+  }
+  
+  /* 表头样式 */
+  tr th {
+    background-color: lightblue;
+    border: 2px solid blue; /* 添加边框并调整颜色和粗细 */
+  }
+  
+  tr th {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /* 单元格样式 */
+  tbody td {
+    text-align: left;
+    padding: 8px;
+    width: 100px; /* 设置单元格的宽度 */
+  height: 50px; /* 设置单元格的高度 */
+  }
+  
+  /* 最后一行（签字和日期）样式 */
+  tfoot td {
+    right: 500px;
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 8px;
+    border: 40px;
+  }
+  
+  /* 图片样式 */
+  table img {
+    width: max-content;
+    height: 500PX;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+  }
+  
+  /* 签字和日期样式 */
+  h5, h6 {
+    text-align: right;
+    margin-right: 100px;
+  }
+  
+  /* 表单样式 */
+  form {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }

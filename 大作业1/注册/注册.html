@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册表格</title>
+  <link rel="stylesheet" type="text/css" href="注册的css.css">
+  <link rel="stylesheet" href="验证码的css.css">
+  <style>
+    /* Add some basic styling for readability */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="follower"></div>
+  <form>
+    <h2>账号信息</h2>
+   
+    <div class="form-group">
+      <label for="username">账号：</label>
+      <input type="text" id="username" name="username" maxlength="17" placeholder="6-17位字符，数字、字母、@、.和空格" oninput=" updateSubmitButtonState()">
+      <h3 id="usernameError" class="error-message"></h3>
+    </div>
+    
+    <!-- 密码输入 -->
+    <div class="form-group">
+      <label for="password">密码：</label>
+      <input type="password" id="password" name="password" maxlength="17" placeholder="6-17位字符，数字、字母、@、.和空格" oninput=" updateSubmitButtonState()">
+      <h3 id="passwordError" class="error-message"></h3>
+    </div>
+    
+    <!-- 确认密码输入 -->
+    <div class="form-group">
+      <label for="confirmPassword">确认密码：</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" maxlength="17" placeholder="再次输入密码" oninput="updateAccountPasswordValidation()">
+      <h3 id="confirmPasswordError" class="error-message"></h3>
+    </div>
+    <h2>个人信息</h2>
+
+    <div class="form-group">
+      <label for="fullName">姓名：</label>
+      <input type="text" id="fullName" name="fullName">
+    </div>
+    <div class="form-group">
+      <label >性别：</label>
+    <input type="radio"  name="gender" value="man" title="Select this option for male gender">>男
+    <input type="radio"  name="gender" value="woman" title="Select this option for male gender">>女
+    </div>
+    <div class="form-group">
+      <label for="birthdate">出生日期：</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+    <div class="form-group">
+      <label for="country">国家/地区：</label>
+      <input type="text" id="country" name="country">
+    </div>
+
+    <h2>联系信息</h2>
+
+    <div class="form-group">
+      <label for="address">地址：</label>
+      <input type="text" id="address" name="address">
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">手机号码：</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber">
+    </div>
+
+    <h2>学历</h2>
+
+    <div class="form-group">
+      <label for="academicField">学术领域（专业）：</label>
+      <input type="text" id="academicField" name="academicField">
+    </div>
+    <div class="form-group">
+      <label for="academicTitle">学术级别/职称：</label>
+      <input type="text" id="academicTitle" name="academicTitle">
+    </div>
+    <div class="form-group">
+      <label for="researchInterest">研究方向：</label>
+      <input type="text" id="researchInterest" name="researchInterest">
+    </div>
+
+  
+
+    <h2>验证码/人机验证</h2>
+
+    <div id="captchaDisplay" class="random-color" onclick="refreshCaptcha()">
+      <img src="美女.jpg.jpg" alt="Image" id="captchaImage">
+      <div id="captchaText" class="random-color"></div>
+    </div>
+    <input type="text" id="captchaInput" placeholder="输入验证码">
+    <h1 id="yz" onclick="validateCaptcha()">验证验证码</h1>
+    <span id="captchaStatus" class="error-message"></span>
+  
+    <div class="form-group">
+      <label for="attachment">上传附件：</label>
+      <input type="file" id="attachment" name="attachment" accept=" image/*" onchange="displayImage(event)">
+      <div id="imageContainer"></div>
+    </div>
+     <button type="submit" id="registerButton" disabled>注册</button> 
+  </form>
+  <script src="注册.js"></script>
+  <script src="验证码的js.js"></script>
+  <script src="确认密码.js"></script>
+  <script src="lunarcursor.js"></script>
+  <script src="附件.js"></script>
+</body>
+</html>

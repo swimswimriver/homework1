@@ -1,0 +1,53 @@
+#captchaDisplay {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  #captchaImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 1;
+    object-fit: cover; /* 图片不超出范围，保持比例 */
+  }
+  
+  .error-message {
+    color: red; /* 错误消息文本颜色为红色 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    display: inline-block;
+  }
+
+  #captchaText {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #captchaInput {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  /* 生成随机颜色 */
+  .random-color {
+    color: rgb(red, green, blue)
+    
+  }
+ 
+  #yz {
+    color: rgb(44, 182, 74); /* 修改文字颜色为蓝色 */
+    cursor: pointer; /* 显示手型光标，表示可以点击 */
+    text-decoration: underline; /* 添加下划线 */
+    font-size: 10px;
+    display: inline-block;
+    font-size: 30px;
+  }
+  #captchaText {
+    font-size: 50px; /* 设置验证码文字大小为50像素 */
+  }
